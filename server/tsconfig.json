@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "outDir": "src",
+      "strict": true,
+      "lib": ["esnext", "dom"]
+    },
+    "exclude": [
+      "src/**/*.test.ts"
+    ]
+}

@@ -1,0 +1,28 @@
+type User {
+  id: ID! @id
+  email: String! @unique
+  password: String!
+  name: String
+  role: RoleFormat @default(value: EDITOR) 
+}
+
+enum RoleFormat {
+  ADMIN
+  EDITOR
+  LECTOR
+}
+
+type Libro {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  titulo: String!
+  fecha_publicado: Int
+  autor: String
+  editorial: String
+  edicion: String
+  tomo: String
+  descripcion: String
+  imagen: String
+  link: String
+}
